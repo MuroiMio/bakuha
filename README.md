@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# バクハ 💥 - ストレス解消アプリ
 
-## Getting Started
+ストレスの原因を入力して爆破！簡単で楽しいストレス解消アプリです。
+音響効果と視覚効果でスッキリ感を体験できます。
 
-First, run the development server:
+## 🌟 特徴
+
+- **シンプルな操作**: ストレスの原因を入力するだけ
+- **迫力の爆破エフェクト**: パーティクル効果と光のビーム
+- **リアルな音響効果**: 爆破音でよりリアルな体験
+- **SNSシェア機能**: Twitter、Facebook、LINE等でシェア可能
+- **レスポンシブデザイン**: PC・スマホ対応
+- **プライバシー重視**: 入力内容は保存されません
+
+## 🚀 技術スタック
+
+- **Framework**: Next.js 15
+- **Language**: JavaScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Particles**: React Particles + tsparticles-slim
+- **Icons**: React Share
+
+## 🏗️ インストールと実行
+
+### 開発環境での実行
 
 ```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてアプリを確認できます。
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### ビルドとデプロイ
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# プロダクションビルド
+npm run build
 
-## Learn More
+# 静的ファイルの生成
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 プロジェクト構造
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+bakuha/
+├── src/
+│   └── app/
+│       ├── layout.js          # レイアウトとメタデータ
+│       ├── page.js            # メインページ
+│       ├── result/
+│       │   └── page.js        # 結果ページ
+│       └── globals.css        # グローバルスタイル
+├── public/
+│   ├── bakuha.mp3            # 爆破音声ファイル
+│   ├── sitemap.xml           # サイトマップ
+│   ├── robots.txt            # クローラー設定
+│   └── *.svg                 # アイコンファイル
+├── package.json
+└── next.config.mjs           # Next.js設定
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 SEO対策
 
-## Deploy on Vercel
+✅ 完全なSEO対策済み：
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **メタタグ最適化**: タイトル、description、keywords
+- **OGP対応**: Facebook、Twitter等でのシェア時の表示最適化
+- **構造化データ**: JSON-LD形式でWebApplicationスキーマを実装
+- **サイトマップ**: `sitemap.xml`で検索エンジン対応
+- **robots.txt**: クローラー制御
+- **パフォーマンス最適化**: 圧縮、CSS最適化
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 カスタマイズ
+
+### 音声ファイルの変更
+`public/bakuha.mp3` を置き換えることで爆破音をカスタマイズできます。
+
+### エフェクトの調整
+`src/app/result/page.js` の `explosionOptions` でパーティクル設定を変更できます。
+
+### メタデータの更新
+`src/app/layout.js` でSEO情報を編集できます。
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## 🤝 コントリビューション
+
+プルリクエストやイシューの報告を歓迎します！
+
+---
+
+**バクハでストレスを爆破して、スッキリした毎日を送りましょう！** 💥✨
