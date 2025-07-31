@@ -51,7 +51,7 @@ export default function Home() {
                 💣
               </motion.div>
               <p className="text-gray-300 text-sm sm:text-base font-light">
-                今の気持ちを爆破しよう
+                今の気持ちを爆破しよう!
               </p>
               <motion.div
                 animate={{ rotate: [0, -10, 10, 0] }}
