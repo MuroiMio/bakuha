@@ -223,7 +223,7 @@ function ResultContent() {
             repeat: Infinity,
             repeatType: 'reverse'
           }}
-          className="whitespace-nowrap text-6xl md:text-8xl lg:text-9xl font-black text-white mb-12 tracking-wider uppercase"
+          className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-12 tracking-wider"
           style={{ textShadow: '0 0 30px #ff0000' }}
         >
           {text}
